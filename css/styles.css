@@ -40,7 +40,7 @@
 .div-navbar{
     /* background-color: #ffde1a; */
     width: 100%;
-    padding: 1em 0;
+    padding: 3em 0;
 }
 
 .lista-navbar {
@@ -54,6 +54,11 @@
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.lista-navbar a{
+    font-size: 1.2em;
+    text-decoration: underline;
 }
 
 .lista-navbar a:active {
@@ -202,20 +207,18 @@ input[type='checkbox']:checked+.language-switch {
 
 /* ------------------------HERO SECTION----------------------- */
 .hero {
-    width: 100%;
     display: grid;
     grid-template-columns: 4em 1fr 4em;
-    gap: 1em;
+    gap: 0 1em;
     align-items: center;
 }
 
 .hero-body {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr max-content;
     justify-content: space-between;
     align-items: center;
-    gap: 2em;
+    gap: 0 2.5em;
     grid-column: 2/3;
     grid-row: 1/2;
     opacity: 0;
@@ -223,20 +226,25 @@ input[type='checkbox']:checked+.language-switch {
 }
 
 .hero-body--show {
-    width: 100%;
+    width: 90%;
     pointer-events: unset;
     opacity: 1;
     transition: opacity 1.5s ease-in-out;
 }
 
 .hero-picture {
-    width: 32em;
-    height: 32em;
-    object-fit: cover;
+    width: 90%;
+    height: 100%;
+    background-position: center;
+}
+
+.hero-img {
+    border-radius: 20px;
 }
 
 .hero-arrow {
-    width: 70%;
+    cursor: pointer;
+    width: 40%;
 }
 
 
